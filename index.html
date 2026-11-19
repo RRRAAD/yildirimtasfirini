@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yıldırım Taş Fırını</title>
+    <!-- Sekme ikonunu (Favicon) logo yapmak için eklenen satır -->
+    <link rel="icon" href="logo.jpg" type="image/jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background-color: #ffffff;
+            color: #3b2314;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #4a2c1d;
+            color: #ffffff;
+            padding: 3rem 1rem;
+            text-align: center;
+            position: relative;
+        }
+        .header-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+        .logo-box {
+            width: 95px;
+            height: 95px;
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.2rem;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .logo-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .header-info {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.9rem;
+            color: #f0e6df;
+            padding: 0 1rem;
+            margin-top: 1rem;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 3rem auto;
+            padding: 0 1.5rem;
+        }
+        .section-title {
+            font-size: 1.8rem;
+            color: #4a2c1d;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #d4bda8;
+            padding-bottom: 0.5rem;
+        }
+        .section-spacing {
+            margin-top: 4rem;
+        }
+        .history-section {
+            background-color: #f7f4f0;
+            padding: 2rem;
+            border-radius: 6px;
+            margin-bottom: 3rem;
+            border-left: 4px solid #4a2c1d;
+        }
+        .history-section p {
+            color: #5c4033;
+            font-size: 1rem;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        .product-card {
+            background-color: #f7f4f0;
+            border: 1px solid #d4bda8;
+            border-radius: 6px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .product-img-box {
+            width: 100%;
+            height: 180px;
+            background-color: #e6dfd5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #7a5c48;
+            font-size: 0.85rem;
+            text-align: center;
+            border-bottom: 1px solid #d4bda8;
+            overflow: hidden;
+        }
+        .product-img-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .product-content {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+            flex-grow: 1;
+        }
+        .product-content h3 {
+            font-size: 1.25rem;
+            color: #4a2c1d;
+        }
+        .product-content .desc, .product-content .recipe {
+            font-size: 0.9rem;
+            color: #5c4033;
+        }
+        .product-content span {
+            font-weight: 600;
+            color: #4a2c1d;
+        }
+        footer {
+            background-color: #4a2c1d;
+            color: #f0e6df;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 4rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo-box">
+                <img src="logo.jpg" alt="Yıldırım Taş Fırını Logo">
+            </div>
+            
+            <h1>Yıldırım Taş Fırını</h1>
+            <p>Geleneksel Odun Ateşi Lezzeti</p>
+
+            <div class="header-info">
+                <div class="mail-info">E-posta: yildirimfirini19@gmail.com</div>
+                <div class="insta-info">Instagram: @yildirimfirini</div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Tarihçe Bölümü -->
+        <section class="history-section">
+            <h2 class="section-title" style="border:none; margin-bottom:1rem; padding:0;">Fırınımızın Tarihçesi</h2>
+            <p>Yıldırım Taş Fırını, 1991`den günümüze gelen unlu mamul geleneğini aynı titizlik ve doğallıkla sürdürmektedir. Kurulduğu günden bu yana odun ateşinin verdiği eşsiz aroma, kaliteli hammadde seçimi ve usta ellerde yoğurulan hamur anlayışından asla ödün vermemiştir. Amacımız, geçmişin lezzet mirasını modern hijyen standartlarıyla harmanlayarak müşterilerimize en taze ve sağlıklı ürünleri sunmaktır.</p>
+        </section>
+
+        <!-- 1. BÖLÜM: EKMEK ÇEŞİTLERİ -->
+        <h2 class="section-title">Ekmek Çeşitlerimiz</h2>
+        <div class="product-grid">
+
+            <div class="product-card">
+                <div class="product-img-box"><img src="eksi mayali.jpeg" alt="Ekşi Mayalı Ekmek"></div>
+                <div class="product-content">
+                    <h3>Ekşi Mayalı Ekmek</h3>
+                    <p class="desc"><span>İçindekiler:</span> Tam buğday unu, su, doğal ekşi maya, kaya tuzu.</p>
+                    <p class="recipe"><span>Yapılışı:</span> Uzun süreli fermente süreçten geçirilerek taş fırında odun ateşinde pişirilir.</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box"><img src="misir ekmegi.jpg" alt="Mısır Ekmeği"></div>
+                <div class="product-content">
+                    <h3>Mısır Ekmeği</h3>
+                    <p class="desc"><span>İçindekiler:</span> Mısır unu, buğday unu, su, zeytinyağı, tuz.</p>
+                    <p class="recipe"><span>Yapılışı:</span> Yoğrulan hamur geleneksel kalıplarda yüksek ısıdaki taş tabanda pişmeye bırakılır.</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box"><img src="tam bugday.jpeg" alt="Tam Buğday Ekmeği"></div>
+                <div class="product-content">
+                    <h3>Tam Buğday Ekmeği</h3>
+                    <p class="desc"><span>İçindekiler:</span> %100 tam buğday unu, su, maya, tuz.</p>
+                    <p class="recipe"><span>Yapılışı:</span> Kabuklu kepekli un yapısı bozulmadan yoğrulur ve fırına verilir.</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box"><img src="cavdar.jpeg" alt="Çavdar Ekmeği"></div>
+                <div class="product-content">
+                    <h3>Çavdar Ekmeği</h3>
+                    <p class="desc"><span>İçindekiler:</span> Çavdar unu, az miktarda buğday unu, su, maya, tuz.</p>
+                    <p class="recipe"><span>Yapılışı:</span> Yoğun lifli çavdar hamuru özel tekniklerle şekillendirilerek pişirilir.</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box"><img src="baharatlı.jpg" alt="Baharatlı Ekmek"></div>
+                <div class="product-content">
+                    <h3>Baharatlı Ekmek</h3>
+                    <p class="desc"><span>İçindekiler:</span> Buğday unu, kekik, pul biber, zeytinyağı, su, tuz.</p>
+                    <p class="recipe"><span>Yapılışı:</span> Hamur içerisine özel baharatlar harmanlanarak fırın kokusuyla buluşturulur.</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box"><img src="somun.jpeg" alt="Somun Ekmek"></div>
+                <div class="product-content">
+                    <h3>Somun Ekmek</h3>
+                    <p class="desc"><span>İçindekiler:</span> Klasik buğday unu, su, maya, tuz.</p>
+                    <p class="recipe"><span>Yapılışı:</span> Günlük taze tüketim için klasik usulde yoğrulup fırında kabartılır.</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box"><img src="trabzon ekmegi.jpeg" alt="Trabzon Ekmeği"></div>
+                <div class="product-content">
+                    <h3>Trabzon Ekmeği</h3>
+                    <p class="desc"><span>İçindekiler:</span> Yüksek kaliteli buğday unu, su, ekşi maya, kaya tuzu.</p>
+                    <p class="recipe"><span>Yapılışı:</span> Büyük yuvarlak formda hazırlanıp kalın kabuklu olacak şekilde odun ateşinde pişirilir.</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box"><img src="cevizli ekmek.jpg" alt="Cevizli Ekmek"></div>
+                <div class="product-content">
+                    <h3>Cevizli Ekmek</h3>
+                    <p class="desc"><span>İçindekiler:</span> Tam buğday unu, kırılmış yerli ceviz içi, ekşi maya, su, kaya tuzu.</p>
+                    <p class="recipe"><span>Yapılışı:</span> İri parçalı ceviz içleri hamurla homojen şekilde yoğrulup taş tabanda ağır ateşte pişirilir.</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box"><img src="siyez ekmegi.jpg" alt="Siyez Ekmeği"></div>
+                <div class="product-content">
+                    <h3>Siyez Ekmeği</h3>
+                    <p class="desc"><span>İçindekiler:</span> Ata tohumu siyez buğdayı unu, doğal ekşi maya, içme suyu, kaya tuzu.</p>
+                    <p class="recipe"><span>Yapılışı:</span> Düşük glütenli geleneksel siyez hamuru uzun süre dinlendirilip odun ateşinde pişirilir.</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box"><img src="balkan ekmegi.jpg" alt="Balkan Ekmeği"></div>
+                <div class="product-content">
+                    <h3>Balkan Ekmeği</h3>
+                    <p class="desc"><span>İçindekiler:</span> Özel harman buğday unu, çavdar unu, ekşi maya, su, tuz.</p>
+                    <p class="recipe"><span>Yapılışı:</span> Yoğun dokulu hamur uzun fermantasyon sonrası yüksek nemli taş fırında kabuğu çıtırlaşana dek pişirilir.</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box"><img src="kabak cekirdekli.jpg" alt="Kabak Çekirdekli Ekmek"></div>
+                <div class="product-content">
+                    <h3>Kabak Çekirdekli Ekmek</h3>
+                    <p class="desc"><span>İçindekiler:</span> Tam buğday unu, kavrulmamış iç kabak çekirdeği, ekşi maya, su, tuz.</p>
+                    <p class="recipe"><span>Yapılışı:</span> Hamur içine ve dış kabuğuna bol miktarda kabak çekirdeği eklenerek taş tabanda fırınlanır.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 2. BÖLÜM: POĞAÇA VE AÇMA ÇEŞİTLERİ -->
+        <h2 class="section-title section-spacing">Poğaça ve Açma Çeşitlerimiz</h2>
+        <div class="product-grid">
+
+            <div class="product-card">
+                <div class="product-img-box"><img src="zeytinli.jpeg" alt="Zeytinli Poğaça"></div>
+                <div class="product-content">
+                    <h3>Zeytinli Poğaça</h3>
+                    <p class="desc"><span>İçindekiler:</span> Buğday unu, tereyağı, süt, yumurta, ayıklanmış siyah zeytin ezmesi, maya.</p>
+                    <p class="recipe"><span>Yapılışı:</span> Yumuşak mayalı hamurun içine siyah zeytin dolgusu yerleştirilip üzerine yumurta sarısı sürülerek pişirilir.</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box"><img src="patatesli.jpeg" alt="Patatesli Poğaça"></div>
+                <div class="product-content">
+                    <h3>Patatesli Poğaça</h3>
+                    <p class="desc"><span>İçindekiler:</span> Buğday unu, tereyağı, yoğurt, haşlanmış patates, soğan, karabiber, tuz.</p>
+                    <p class="recipe"><span>Yapılışı:</span> Hafif baharatlarla kavrulmuş patates harcı hamurla buluşturulup fırında nar gibi kızartılır.</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box"><img src="acma.jpeg" alt="Boş Açma"></div>
+                <div class="product-content">
+                    <h3>Boş Açma</h3>
+                    <p class="desc"><span>İçindekiler:</span> Buğday unu, ılık süt, tereyağı, sıvı yağ, yaş maya, şeker, tuz.</p>
+                    <p class="recipe"><span>Yapılışı:</span> Tereyağı ile kat kat açılıp burgu şekli verilen hamur, tepsi mayası aldıktan sonra yumuşacık pişirilir.</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box"><img src="kete.jpeg" alt="Kete"></div>
+                <div class="product-content">
+                    <h3>Kete</h3>
+                    <p class="desc"><span>İçindekiler:</span> Buğday unu, tereyağı, süt, yumurta, kavrulmuş un iç harcı, tuz.</p>
+                    <p class="recipe"><span>Yapılışı:</span> Katları tek tek yağlanan hamurun arasına tereyağında kavrulmuş un eklenerek geleneksel usulde fırınlanır.</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box"><img src="hashasli.jpeg" alt="Haşhaşklı Çörek"></div>
+                <div class="product-content">
+                    <h3>Haşhaşlı Çörek</h3>
+                    <p class="desc"><span>İçindekiler:</span> Buğday unu, süt, sıvı yağ, dövülmüş sarı haşhaş ezmesi, maya, şeker.</p>
+                    <p class="recipe"><span>Yapılışı:</span> İnce açılan hamur katlarının arasına bol haşhaş ezmesi sürülüp rulo yapılarak dilimlenir ve pişirilir.</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box"><img src="salamli.jpg" alt="Salamlı Poağça"></div>
+                <div class="product-content">
+                    <h3>Salamlı Poğaça</h3>
+                    <p class="desc"><span>İçindekiler:</span> Buğday unu, tereyağı, süt, yumurta, dana salam dilimleri, maya, tuz.</p>
+                    <p class="recipe"><span>Yapılışı:</span> Dinlendirilmiş poğaça hamurunun içerisine dana salam dilimleri yerleştirilerek sıcak fırında pişirilir.</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box"><img src="kasarli.jpeg" alt="Kaşarlı Poğaça"></div>
+                <div class="product-content">
+                    <h3>Kaşarlı Poğaça</h3>
+                    <p class="desc"><span>İçindekiler:</span> Buğday unu, tereyağı, süt, yumurta, taze kaşar peyniri, maya, tuz.</p>
+                    <p class="recipe"><span>Yapılışı:</span> İçine bol taze kaşar peyniri eklenen hamurlar, üzeri kızarana ve peyniri eriyene dek fırınlanır.</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box"><img src="ispanakli.jpg" alt="Ispanaklı Poğaça"></div>
+                <div class="product-content">
+                    <h3>Ispanaklı Poğaça</h3>
+                    <p class="desc"><span>İçindekiler:</span> Buğday unu, tereyağı, yoğurt, taze yaprak ıspanak, beyaz peynir, soğan, tuz.</p>
+                    <p class="recipe"><span>Yapılışı:</span> İnce kıyılmış taze ıspanak ve peynir harcı mayalı hamurun içine yerleştirilerek fırında pişirilir.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 3. BÖLÜM: SİMİT ÇEŞİTLERİ -->
+        <h2 class="section-title section-spacing">Simit Çeşitlerimiz</h2>
+        <div class="product-grid">
+
+            <div class="product-card">
+                <div class="product-img-box"><img src="tava simidi.jpg" alt="Tava Simidi"></div>
+                <div class="product-content">
+                    <h3>Tava Simidi</h3>
+                    <p class="desc"><span>İçindekiler:</span> Buğday unu, tereyağı, süt, mahlep, yumurta sarısı, kavrulmuş susam, tuz.</p>
+                    <p class="recipe"><span>Yapılışı:</span> Tereyağı ve mahlep ile yoğrulan yumuşak hamur halka formunda hazırlanıp tepside nar gibi kızarana dek pişirilir.</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box"><img src="simit fotosu.jpg" alt="Ankara Simidi"></div>
+                <div class="product-content">
+                    <h3>Ankara Simidi</h3>
+                    <p class="desc"><span>İçindekiler:</span> Sert buğday unu, su, maya, koyu üzüm pekmezi, bol kavrulmuş susam, tuz.</p>
+                    <p class="recipe"><span>Yapılışı:</span> İnce örülen hamur halkaları yoğun pekmezli suya batırılıp bol susama bulanarak yüksek ısılı taş tabanda çıtır pişirilir.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>Yıldırım Taş Fırını. Tüm hakları saklıdır.Alıntı yapılamaz ve kopyalanamaz.</p>
+    </footer>
+
+</body>
+</html>
